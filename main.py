@@ -20,18 +20,18 @@ karakter = 'abcçdefgğhıijklmnoöprsştuüvyz1234567890ABCÇDEFGĞHIİJKLMNOÖ
 
 while True:
     try:
-        numara = int(input("[+] Oluşturulacak parola sayısı: "))
+        numara = int(input("[+] Number of passwords to be created: "))
         break
     except ValueError:
-        print("Sayısal değer giriniz.")
+        print("Enter numeric value.")
         continue
 
 while True:
     try:
-        uzunluk = int(input("[-] Parola uzunluğunu giriniz: "))
+        uzunluk = int(input("[-] Enter the password length: "))
         break
     except ValueError:
-        print("Sayısal değer giriniz.")
+        print("Enter numeric value.")
         continue
 
 for passw in range(numara):
